@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>purecss.io</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/board.css">
+    <style>
+        #container {
+            margin: 0 auto;
+            max-width: 1000px;
+            padding-top: 50px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#upload").on("change", function() {
+                $("#for_upload").val(this.value);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+
+        <div class="board-title">
+            <h2>게시판</h2>
+        </div>
+
+        <div class="board-form">
+            <form id="registerForm" action="#" method="post" class="pure-form">
+                <div class="category">
+                    <select>
+                        <option>자유</option>
+                        <option>질문</option>
+                    </select>
+                </div>
+
+                <div class="title">
+                    <input type="text" placeholder="제목을 입력해주세요.">
+                </div>
+
+                <div class="content">
+                    <textarea placeholder="내용을 입력해주세요."></textarea>
+                </div>
+
+                <div class="upload pure-g">
+                    <div class="pure-u-3-4">
+                        <input type="text" id="for_upload">
+                    </div>
+                    <div class="pure-u-1-4">
+                        <label for="upload">업로드</label>
+                        <input type="file" id="upload">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="board-buttons">
+            <a href="#" class="pure-button">초기화</a>
+            <a href="#" class="pure-button">목록</a>
+            <a href="#" class="pure-button pure-button-primary">완료</a>
+        </div>
+
+    </div><!-- #container -->
+
+
+</body>
+</html>

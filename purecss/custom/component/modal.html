@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>Modal</title> 
+		<style>
+		h1, #container { padding: 0.6em; }
+
+		.modal { position: absolute; top: 0; left: 0; display: none; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); }
+		.modal .window { position: absolute; top: 50%; left: 50%; width: 400px; height: 600px; padding: 40px; text-align: center; background-color: rgb(255, 255, 255); border-radius: 10px; box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15); transform: translateX(-50%) translateY(-50%);}
+		</style> 
+	</head>
+	<body>
+		<h1>Modal</h1>
+
+		<div id="container">
+			<div class="modal">
+				<div class="window">
+					<h1>Modal</h1>
+					<button class="modal-close">Modal 닫기</button>
+				</div>
+			</div>
+			<button class="modal-open">Modal 띄우기</button>
+		</div>
+
+		<script> 
+			const modal = document.querySelector('.modal'); 
+			const btnOpenPopup = document.querySelector('.modal-open');
+			btnOpenPopup.addEventListener('click', () => { 
+				modal.style.display = 'block'; 
+			}); 
+			const btnClosePopup = document.querySelector('.modal-close');
+			btnClosePopup.addEventListener('click', () => { 
+				modal.style.display = 'none'; 
+			}); 
+		</script> 
+	</body> 
+</html>

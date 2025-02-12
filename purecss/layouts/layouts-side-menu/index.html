@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+    <script type="text/javascript">
+    (function (window, document) {
+        'use strict';
+
+        // Enable drop-down menus in Pure
+        // Inspired by YUI3 gallery-simple-menu by Julien LeComte
+        // [https://github.com/yui/yui3-gallery/blob/master/src/gallery-simple-menu/js/simple-menu.js]
+
+        function PureDropdown(dropdownParent) {
+
+            var PREFIX = 'pure-',
+                ACTIVE_CLASS_NAME = PREFIX + 'menu-active',
+                ARIA_ROLE = 'role',
+                ARIA_HIDDEN = 'aria-hidden',
+                MENU_OPEN = 0,
+                MENU_CLOSED = 1,
+                MENU_PARENT_CLASS_NAME = 'pure-menu-has-children',
+                MENU_ACTIVE_SELECTOR = '.pure-menu-active',
+                MENU_LINK_SELECTOR = '.pure-menu-link',
+                MENU_SELECTOR = '.pure-menu-children',
+                DISMISS_EVENT = (window.hasOwnProperty &&
+                    window.hasOwnProperty('ontouchstart')) ?
+                        'touchstart' : 'mousedown',
+
+                ARROW_KEYS_ENABLED = true,
+
+                ddm = this; // drop down menu
+
+                this._state = MENU_CLOSED;
+
+                this.show = function () {
+                    if (this._state !== MENU_OPEN) {
+                        this._dropdownParent.classList.add(ACTIVE_CLASS_NAME);
+                        this._menu.setAttribute(ARIA_HIDDEN, false);
+                        this._state = MENU_OPEN;
+                    }
+                };
+
+                this.hide = function () {
+                    if (this._state !== MENU_CLOSED) {
+                        this._dropdownParent.classList.remove(ACTIVE_CLASS_NAME);
+                        this._menu.setAttribute(ARIA_HIDDEN, true);
+                        this._link.focus();
+                        this._state = MENU_CLOSED;
+                    }
+                };
+
+                this.toggle = function () {
+                    this[this._state === MENU_CLOSED ? 'show' : 'hide']();
+                };
+
+                this.halt = function (e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                };
+
+                this._dropdownParent = dropdownParent;
+                this._link = this._dropdownParent.querySelector(MENU_LINK_SELECTOR);
+                this._menu = this._dropdownParent.querySelector(MENU_SELECTOR);
+                this._firstMenuLink = this._menu.querySelector(MENU_LINK_SELECTOR);
+
+                // Set ARIA attributes
+                this._link.setAttribute('aria-haspopup', 'true');
+                this._menu.setAttribute(ARIA_ROLE, 'menu');
+                this._menu.setAttribute('aria-labelledby', this._link.getAttribute('id'));
+                this._menu.setAttribute('aria-hidden', 'true');
+                [].forEach.call(
+                    this._menu.querySelectorAll('li'),
+                    function(el){
+                        el.setAttribute(ARIA_ROLE, 'presentation');
+                    }
+                );
+                [].forEach.call(
+                    this._menu.querySelectorAll('a'),
+                    function(el){
+                        el.setAttribute(ARIA_ROLE, 'menuitem');
+                    }
+                );
+
+                // Toggle on click
+                this._link.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    ddm.toggle();
+                });
+
+                // Keyboard navigation
+                document.addEventListener('keydown', function (e) {
+                    var currentLink,
+                        previousSibling,
+                        nextSibling,
+                        previousLink,
+                        nextLink;
+
+                    // if the menu isn't active, ignore
+                    if (ddm._state !== MENU_OPEN) {
+                        return;
+                    }
+
+                    // if the menu is the parent of an open, active submenu, ignore
+                    if (ddm._menu.querySelector(MENU_ACTIVE_SELECTOR)) {
+                        return;
+                    }
+
+                    currentLink = ddm._menu.querySelector(':focus');
+
+                    // Dismiss an open menu on ESC
+                    if (e.keyCode === 27) {
+                        /* Esc */
+                        ddm.halt(e);
+                        ddm.hide();
+                    }
+                    // Go to the next link on down arrow
+                    else if (ARROW_KEYS_ENABLED && e.keyCode === 40) {
+                        /* Down arrow */
+                        ddm.halt(e);
+                        // get the nextSibling (an LI) of the current link's LI
+                        nextSibling = (currentLink) ? currentLink.parentNode.nextSibling : null;
+                        // if the nextSibling is a text node (not an element), go to the next one
+                        while (nextSibling && nextSibling.nodeType !== 1) {
+                            nextSibling = nextSibling.nextSibling;
+                        }
+                        nextLink = (nextSibling) ? nextSibling.querySelector('.pure-menu-link') : null;
+                        // if there is no currently focused link, focus the first one
+                        if (!currentLink) {
+                            ddm._menu.querySelector('.pure-menu-link').focus();
+                        }
+                        else if (nextLink) {
+                            nextLink.focus();
+                        }
+                    }
+                    // Go to the previous link on up arrow
+                    else if (ARROW_KEYS_ENABLED && e.keyCode === 38) {
+                        /* Up arrow */
+                        ddm.halt(e);
+                        // get the currently focused link
+                        previousSibling = (currentLink) ? currentLink.parentNode.previousSibling : null;
+                        while (previousSibling && previousSibling.nodeType !== 1) {
+                            previousSibling = previousSibling.previousSibling;
+                        }
+                        previousLink = (previousSibling) ? previousSibling.querySelector('.pure-menu-link') : null;
+                        // if there is no currently focused link, focus the last link
+                        if (!currentLink) {
+                            ddm._menu.querySelector('.pure-menu-item:last-child .pure-menu-link').focus();
+                        }
+                        // else if there is a previous item, go to the previous item
+                        else if (previousLink) {
+                            previousLink.focus();
+                        }
+                    }
+                });
+
+                // Dismiss an open menu on outside event
+                document.addEventListener(DISMISS_EVENT, function (e) {
+                    var target = e.target;
+                    if (target !== ddm._link && !ddm._menu.contains(target)) {
+                        ddm.hide();
+                        ddm._link.blur();
+                    }
+                });
+
+        }
+
+        function initDropdowns() {
+            var dropdownParents = document.querySelectorAll('.pure-menu-has-children');
+            for (var i = 0; i < dropdownParents.length; i++) {
+                var ddm = new PureDropdown(dropdownParents[i]);
+            }
+        }
+
+        initDropdowns();
+
+    }(this, this.document));
+    
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">Company</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+
+                <li class="pure-menu-item menu-item-divided pure-menu-selected">
+                    <a href="#" class="pure-menu-link">Services</a>
+                </li>
+
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Page Title</h1>
+            <h2>A subtitle for your page goes here</h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">How to use this layout</h2>
+            <p>
+                To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
+            </p>
+
+            <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+                </div>
+            </div>
+
+            <h2 class="content-subhead">Try Resizing your Browser</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/ui.js"></script>
+
+</body>
+</html>

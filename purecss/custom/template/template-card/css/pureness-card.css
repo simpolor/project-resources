@@ -1,0 +1,81 @@
+/* ---- pureness-card-title ---- */
+.pureness-card-title {
+    margin-bottom: 20px;
+    color: #A4A4A4;
+}
+.pureness-card-title h2{
+    font-size: 24px;
+}
+
+/* ---- pureness-card-buttons ---- */
+.pureness-card-buttons {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* ---- pureness-card-list ---- */
+.pureness-card-list {
+    width: inherit;
+}
+.pureness-card-item {
+    display: inline-block;
+    margin: 5px 5px 15px;
+    width: 220px;
+    height: auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #CACACA;
+    -moz-box-shadow: 10px 10px 10px #CACACA;
+    -webkit-box-shadow: 10px 10px 10px #CACACA;
+}
+
+.pureness-card-item img {
+    border-radius: 15px 15px 0 0;
+}
+
+.pureness-card-item .title {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+.pureness-card-item .content {
+    display: block;
+    height: 100px;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+}
+
+/* ---- pureness-card-search ---- */
+.pureness-card-search {
+    width: 100%;
+    margin: 40px 0;
+    padding: 15px 0;
+    border: 1px solid #cbcbcb;
+}
+.pureness-card-search select, .pureness-card-search input, .pureness-card-search button {
+    height: 37px;
+}
+.pureness-card-search select {
+    float: right;
+    width: 90%;
+    margin-right: 5px;
+
+}
+.pureness-card-search input {
+    width: 100%;
+}
+.pureness-card-search button {
+    float: left;
+    width: 80%;
+    margin-left: 5px;
+}
+
+.pureness-card-search .pure-form button[type=submit] {
+    margin: 0 !important;
+}
+

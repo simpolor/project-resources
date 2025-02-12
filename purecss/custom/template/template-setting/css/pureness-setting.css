@@ -1,0 +1,111 @@
+/* ---- pureness-mypage-title ---- */
+.pureness-setting-title {
+    margin-bottom: 20px;
+    color: #A4A4A4;
+}
+.pureness-setting-title h2{
+    font-size: 24px;
+}
+.pureness-setting-title h3{
+    padding-top: 10px;
+    font-size: 20px;
+    border-top: 1px solid #cbcbcb;
+}
+
+/* ---- pure-buttons ---- */
+.pureness-setting-buttons {
+    text-align: right;
+}
+
+/* ---- setting-list ---- */
+.pureness-setting-list {
+    width: 100%;
+}
+
+.pureness-setting-list th, td {
+    text-align: center;
+}
+
+.pureness-setting-list td {
+    font-weight: lighter;
+}
+
+.pureness-setting-list a {
+    text-decoration: none;
+}
+.pureness-setting-list i {
+    padding: 0 10px;
+}
+
+.pureness-setting-list .title {
+    text-align: left;
+}
+
+.pureness-setting-list .edit {
+    color: #1f8dd6;
+}
+
+.pureness-setting-list .delete {
+    color: #dd514c;
+}
+
+/* ---- pureness-mypage-form ---- */
+.pureness-setting-form {
+    width: 100%;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.pureness-setting-form .pure-g {
+    margin-bottom: 15px;
+}
+.pureness-setting-form input[type="text"] {
+    width: 100%;
+    height: 40px;
+}
+.pureness-setting-form .title {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+}
+.pureness-setting-form .content {
+    display: block;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 9px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #2E2E2E;
+}
+.pureness-setting-form .error {
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+/* ---- pureness-member-search ---- */
+.pureness-setting-search {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border: 1px solid #cbcbcb;
+}
+.pureness-setting-search select, .pureness-setting-search input, .pureness-setting-search button {
+    height: 37px;
+}
+.pureness-setting-search select {
+    float: right;
+    width: 90%;
+    margin-right: 5px;
+}
+.pureness-setting-search input {
+    width: 100%;
+}
+.pureness-setting-search button {
+    float: left;
+    width: 80%;
+    margin-left: 5px;
+}
+.pureness-setting-search .pure-form button[type=submit] {
+    margin: 0 !important;
+}

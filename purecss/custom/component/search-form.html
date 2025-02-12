@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>purecss.io</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+		<style>
+			h1, #container{ padding: 0.6em; }
+
+			.search-form { width: 100%; border: 1px solid #cbcbcb; margin: 10px 0; padding: 15px 0; }
+			.search-form select, .search-form input, .search-form button { height: 37px; }
+			.search-form select { float: right; margin-right: 5px; width: 90%; }
+			.search-form input { width: 100%; }
+			.search-form button { float: left; margin-left: 5px; width: 80%; }
+		</style>
+	</head>
+	<body>
+		<h1>Search</h1>
+
+		<div id="container">
+
+			<div class="search-form">
+				<form class="pure-g pure-form ">
+					<div class="pure-u-1-4">
+						<select id="state">
+							<option>검색조건</option>
+							<option>텍스트</option>
+						</select>
+					</div>
+					<div class="pure-u-5-8">
+						<input type="text" placeholder="검색내용">
+					</div>
+					<div class="pure-u-1-8">
+						<button class="pure-button pure-button-primary">검색</button>
+					</div>
+				</form><!-- .search-form -->
+			</div>
+		</div>
+
+	</body>
+</html>

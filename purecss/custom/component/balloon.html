@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>purecss.io</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+	<style>
+		h1, #container { padding: 0.6em; }
+
+		.balloon { display: inline-block; position: relative; margin: 0 auto 10px; padding: 10px; background: #E0E0E0; border-radius: 2px; }
+		.balloon-top:after { content: ''; position: absolute; left: 15px; top: -10px; border-bottom: 10px solid #E0E0E0; border-right: 7px solid transparent; border-left: 7px solid transparent; }
+		.balloon-left:after { position: absolute; top: 10px; left: -10px; border-top: 7px solid transparent; border-right: 10px solid #E0E0E0; border-bottom: 7px solid transparent; }
+		.balloon-right:after { position: absolute; top: 10px; right: -10px; border-top: 7px solid transparent; border-left: 10px solid #E0E0E0; border-bottom: 7px solid transparent; }
+		.balloon-bottom:after { position: absolute; left: 15px; bottom: -10px; border-top: 10px solid #E0E0E0; border-right: 7px solid transparent; border-left: 7px solid transparent; }
+	</style>
+</head>
+<body>
+	<h1>Balloon</h1>
+
+	<div id="container">
+		<span class="balloon balloon-top">pureness-balloon top pureness-balloon top pureness-balloon top</span><br />
+		<span class="balloon balloon-left">pureness-balloon left <br/> pureness-balloon left</span><br />
+		<span class="balloon balloon-right">pureness-balloon right</span><br />
+		<span class="balloon balloon-bottom">pureness-balloon bottom</span>
+	</div>
+
+	<hr />
+
+</body>
+</html>

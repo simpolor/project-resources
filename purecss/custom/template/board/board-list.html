@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>purecss.io</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../layouts/layout-2/css/stickyfooter.css">
+    <link rel="stylesheet" href="../../layouts/layout-2/css/layout.css">
+    <link rel="stylesheet" href="css/board.css">
+    <style>
+        #container {
+            margin: 0 auto;
+            max-width: 1000px;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div class="board-title">
+            <h2>게시판</h2>
+        </div><!-- .board-title -->
+
+        <div class="board-list">
+            <table class="pure-table">
+                <colgroup>
+                    <col width="7%"/>
+                    <col width="45%"/>
+                    <col width="13%"/>
+                    <col width="15%"/>
+                    <col width="10%"/>
+                </colgroup>
+
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th class="title">제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="title">
+                        <a href="#">자유게시판</a>
+                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                    </td>
+                    <td>관리자</td>
+                    <td >2018-03-24</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td class="title"><a href="#">공지사항</a></td>
+                    <td>관리자</td>
+                    <td>2018-03-24</td>
+                    <td>107</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <ul>
+                <li class=""><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                <li class=""><a href="#"><i class="fa fa-angle-left"></i></a></li>
+
+                <li class="active"><a>1</a></li>
+                <li><a>2</a></li>
+                <li><a>3</a></li>
+                <li><a>4</a></li>
+                <li><a>5</a></li>
+
+                <li class=""><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                <li class="disabled"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="board-buttons">
+            <a href="admin-board-write.html" class="pure-button pure-button-primary">글쓰기</a>
+        </div>
+
+        <div class="board-search">
+            <form class="pure-g pure-form">
+                <div class="pure-u-1-4">
+                    <select id="state">
+                        <option>검색조건</option>
+                    </select>
+                </div>
+                <div class="pure-u-5-8">
+                    <input type="text" placeholder="검색내용">
+                </div>
+                <div class="pure-u-1-8">
+                    <button type="submit" class="pure-button">검색</button>
+                </div>
+            </form>
+        </div>
+
+    </div><!-- #container -->
+
+</body>
+</html>

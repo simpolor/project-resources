@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>purecss.io</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../layouts/layout-2/css/stickyfooter.css">
+    <link rel="stylesheet" href="../../layouts/layout-2/css/layout.css">
+    <link rel="stylesheet" href="../../pureness/css/pureness.css">
+    <link rel="stylesheet" href="../../component/css/pureness-pagination.css">
+    <link rel="stylesheet" href="css/pureness-member.css">
+    <style type="text/css">
+        #content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="main">
+
+        <div id="header">
+            <div class="pure-g" style="text-align: center; line-height: 50px;">
+                <div class="pure-u-1">
+                    Header
+                </div>
+            </div>
+        </div><!-- #header -->
+
+        <div id="nav">
+            <div class="pure-g" style="text-align: center; line-height: 50px;">
+                <div class="pure-u-1">
+                    Nav
+                </div>
+            </div>
+        </div><!-- #nav -->
+
+        <div id="content">
+            <div id="main-section">
+
+                <div class="pureness-member-title">
+                    <h2>회원 관리</h2>
+                </div>
+
+                <table class="pure-table pureness-member-list">
+                    <colgroup>
+                        <col width="20%"/>
+                        <col width="20%"/>
+                        <col width="20%"/>
+                        <col width="20%"/>
+                        <col width="20%"/>
+                    </colgroup>
+
+                    <thead>
+                    <tr>
+                        <th>아이디</th>
+                        <th>이름</th>
+                        <th>이메일</th>
+                        <th>생성일</th>
+                        <th>수정일</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>manager</td>
+                        <td>매니저</td>
+                        <td>manager@gmail.com</td>
+                        <td>2018-03-24</td>
+                        <td>2018-03-24</td>
+                    </tr>
+
+                    <tr>
+                        <td>cskim</td>
+                        <td>김철수</td>
+                        <td>cskim@gmail.com</td>
+                        <td>2018-03-24</td>
+                        <td>2018-04-24</td>
+                    </tr>
+
+                    <tr>
+                        <td>admin</td>
+                        <td>관리자</td>
+                        <td>admin@gmail.com</td>
+                        <td>2018-03-24</td>
+                        <td>2018-05-01</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <div id="pagination" class="pureness-pagination">
+                    <ul>
+                        <li class=""><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li class=""><a href="#"><i class="fa fa-angle-left"></i></a></li>
+
+                        <li class="active"><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                        <li><a>5</a></li>
+
+                        <li class=""><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                        <li class="disabled"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div><!-- #pagination -->
+
+                <div class="pureness-member-buttons">
+                    <button class="pure-button pure-button-primary">등록</button>
+                </div><!-- .pure-buttons -->
+
+                <form class="pure-form pure-g pureness-member-search">
+                    <div class="pure-u-1-4">
+                        <select id="state">
+                            <option>검색조건</option>
+                        </select>
+                    </div>
+                    <div class="pure-u-5-8">
+                        <input type="text" placeholder="검색내용">
+                    </div>
+                    <div class="pure-u-1-8">
+                        <button type="submit" class="pure-button">검색</button>
+                    </div>
+                </form><!-- .pureness-member-search -->
+
+            </div><!-- #content -->
+        </div><!-- #section -->
+
+    </div><!-- #main -->
+</div><!-- #wrap -->
+
+<div id="footer">
+    <div class="pure-g" style="text-align: center; line-height: 50px;">
+        <div class="pure-u-1">
+            Footer
+        </div>
+    </div>
+</div><!-- #footer -->
+
+</body>
+</html>

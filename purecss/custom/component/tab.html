@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>purecss.io</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+	<style>
+		h1, #container { padding: 0.6em; }
+
+		.tab { width: 100%; white-space: nowrap; }
+		.tab ul { list-style: none; z-index: -1; margin: 0; padding: 0; border-bottom: 1px solid #777; }
+		.tab li  { position: relative; display: inline-block; vertical-align: middle; }
+		.tab a { display: block; text-decoration: none; padding: .5em 1em; color: #777; }
+		.tab a:hover { text-decoration: underline; }
+		.tab .active { position: relative; z-index: 10; border-top: 1px solid #777; border-left: 1px solid #777; border-right: 1px solid #777; border-radius: 10px 10px 0 0 }
+	</style>
+</head>
+<body>
+	<h1>Tab</h1>
+
+	<div id="container">
+
+		<div class="tab">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Introduce</a></li>
+				<li><a href="#">Infomation</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+</body>
+</html>

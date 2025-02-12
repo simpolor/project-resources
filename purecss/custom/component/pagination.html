@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>purecss.io</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			h1, #container{ padding: 0.6em; }
+
+			.pagination { margin: 0 auto }
+			.pagination ul { list-style: none; text-align: center; }
+			.pagination li { display: inline; padding: 0 5px; }
+			.pagination a { display: inline-block; margin-right: 3px; padding: 4px 13px; font-size: 16px; font-weight: lighter; line-height: 20px; color: #2E2E2E; border-radius: 3px; }
+			.pagination a:hover { text-decoration: underline; }
+			.pagination .active>a { color: #1f8dd6; border: 1px solid #CBCBCB; }
+
+			.o-pagination ul { list-style: none; text-align: center; }
+			.o-pagination li { display: inline; padding: 0 5px; }
+			.o-pagination a { display: inline-block; margin-right: 3px; padding: 4px 13px; font-size: 16px; font-weight: lighter; line-height: 20px; color: #2E2E2E; border: 1px solid #CBCBCB; border-radius: 3px; }
+			.o-pagination a:hover { text-decoration: underline; }
+			.o-pagination .active>a { color: #000; background-color: #D5D5D5; }
+		</style>
+	</head>
+	<body>
+		<h1>Pagination</h1>
+
+		<div id="container">
+			<div class="pagination">
+				<ul>
+					<li class=""><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+					<li class=""><a href="#"><i class="fa fa-angle-left"></i></a></li>
+
+					<li class="active"><a>1</a></li>
+					<li><a>2</a></li>
+					<li><a>3</a></li>
+					<li><a>4</a></li>
+					<li><a>5</a></li>
+
+					<li class=""><a href="#"><i class="fa fa-angle-right"></i></a></li>
+					<li class="disabled"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+				</ul>
+			</div><!-- .pagination -->
+		</div>
+
+		<hr />
+
+		<div class="container">
+			<div class="o-pagination">
+				<ul>
+					<li class=""><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+					<li class=""><a href="#"><i class="fa fa-angle-left"></i></a></li>
+
+					<li class="active"><a>1</a></li>
+					<li><a>2</a></li>
+					<li><a>3</a></li>
+					<li><a>4</a></li>
+					<li><a>5</a></li>
+
+					<li class=""><a href="#"><i class="fa fa-angle-right"></i></a></li>
+					<li class="disabled"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+				</ul>
+			</div><!-- .o-pagination -->
+		</div>
+
+		<hr />
+
+	</body>
+</html>

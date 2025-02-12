@@ -1,0 +1,174 @@
+/* ---- pureness-timeline-title ---- */
+.pureness-timeline-title {
+    margin-bottom: 20px;
+    color: #A4A4A4;
+}
+.pureness-timeline-title h2{
+    font-size: 24px;
+}
+
+/* ---- pureness-timeline-buttons ---- */
+.pureness-timeline-buttons {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* ---- pureness-timeline-list ---- */
+.pureness-timeline-list {
+    width: inherit;
+}
+.pureness-timeline-item {
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #CACACA;
+    -moz-box-shadow: 10px 10px 10px #CACACA;
+    -webkit-box-shadow: 10px 10px 10px #CACACA;
+}
+
+.pureness-timeline-item .profile {
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #000000;
+    background: #CACACA;
+}
+.pureness-timeline-item .profile-image {
+    float: left;
+    height: 50px;
+}
+.pureness-timeline-item .profile-image img {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    border-radius: 20px;
+}
+.pureness-timeline-item .nickname {
+    float: left;
+    margin-left: 5px;
+    height: 50px;
+    line-height: 50px;
+}
+.pureness-timeline-item .nickname span {
+    font-weight: bold;
+    font-size: 16px;
+}
+.pureness-timeline-item .date {
+    float: left;
+    margin-left: 5px;
+    height: 50px;
+    line-height: 50px;
+}
+.pureness-timeline-item .date span {
+    font-size: 14px;
+    color: #000000;
+}
+.pureness-timeline-item .content {
+    clear: both;
+    height: inherit;
+    min-height: 100px;
+}
+.pureness-timeline-item .content p {
+    padding: 10px;
+    font-size: 14px;
+}
+.pureness-timeline-item .content textarea {
+    padding: 10px;
+    width: 100%;
+    min-height: 90px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none;
+    border: 0px;
+    background: #FAFAFA;
+}
+.pureness-timeline-item .buttons {
+    height: 40px;
+    text-align: right;
+    margin-right: 10px;
+}
+.pureness-timeline-item .buttons>.pure-button {
+    width: 50px;
+    height: 30px;
+    padding: 0;
+}
+
+
+/* ---- pureness-timeline-form ---- */
+.pureness-timeline-form {
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #CACACA;
+    -moz-box-shadow: 10px 10px 10px #CACACA;
+    -webkit-box-shadow: 10px 10px 10px #CACACA;
+}
+
+.pureness-timeline-form .profile {
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #000000;
+    background: #CACACA;
+}
+.pureness-timeline-form .profile-image {
+    float: left;
+    height: 50px;
+}
+.pureness-timeline-form .profile-image img {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    border-radius: 20px;
+}
+.pureness-timeline-form .nickname {
+    float: left;
+    margin-left: 5px;
+    height: 50px;
+    line-height: 50px;
+}
+.pureness-timeline-form .nickname span {
+    font-weight: bold;
+    font-size: 16px;
+}
+.pureness-timeline-form .comment {
+    float: left;
+    margin-left: 5px;
+    height: 50px;
+    line-height: 50px;
+}
+.pureness-timeline-form .comment span {
+    font-size: 14px;
+    color: #000000;
+}
+.pureness-timeline-form .content {
+    clear: both;
+    height: inherit;
+    min-height: 100px;
+}
+.pureness-timeline-form .content textarea {
+    padding: 10px;
+    width: 100%;
+    min-height: 90px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none;
+    border: 0px;
+    background: #FAFAFA;
+}
+.pureness-timeline-form .buttons {
+    height: 40px;
+    text-align: right;
+    margin-right: 10px;
+}
+.pureness-timeline-form .buttons>.pure-button {
+    width: 100px;
+    height: 30px;
+    padding: 0;
+}

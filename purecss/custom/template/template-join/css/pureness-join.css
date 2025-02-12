@@ -1,0 +1,88 @@
+/* ---- pureness-join-title ---- */
+.pureness-join-title {
+    margin-bottom: 20px;
+    color: #A4A4A4;
+}
+.pureness-join-title h2{
+    font-size: 24px;
+}
+
+
+/* ---- pureness-join-form ---- */
+.pureness-join-form {
+    width: 100%;
+    border: 0px;
+}
+.pureness-join-form .pure-g {
+    margin-bottom: 15px;
+}
+.pureness-join-form input, .pureness-join-form button, .pureness-join-form span {
+    height: 40px;
+}
+.pureness-join-form .title {
+    font-weight: bold;
+    line-height: 24px;
+}
+.pureness-join-form .error {
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+.pureness-join-form .check {
+    margin: 0 10px;
+    width: 90%;
+}
+
+/* ---- pureness-join-complete ---- */
+.pureness-join-complete {
+    width: 100%;
+    border: 0px;
+}
+.pureness-join-complete .pure-g {
+    margin-bottom: 10px;
+}
+.pureness-join-complete button, .pureness-join-complete-form span {
+    height: 40px;
+}
+.pureness-join-complete .title {
+    display: block;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+}
+.pureness-join-complete .content {
+    display: block;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 9px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center;
+    color: #2E2E2E;
+    line-height: 40px;
+}
+
+/* ---- pureness-join-buttons ---- */
+.pureness-join-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.pureness-join-buttons .full {
+    width: 100%;
+    height: 40px;
+}
+.pureness-join-buttons button {
+    margin-bottom: 10px;
+}
+
+/* ---- pureness-join-links ---- */
+.pureness-join-links {
+    text-align: center;
+    margin-top: 20px;
+}
+.pureness-join-links a {
+    color: #353535;
+    text-decoration: none;
+    padding-left: 20px;
+}

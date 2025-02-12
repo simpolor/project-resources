@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>purecss.io</title>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+		<![endif]-->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+		<!--<![endif]-->
+        <style>
+            h1{
+                padding: 0.6em 0.6em;
+            }
+            .division {
+                padding: 2.4em 1.2em;
+                font-weight: 100;
+                border-top: 1px solid #000;
+            }
+        </style>
+	</head>
+	<body>
+		<h1>Purecss Input</h1>
+
+		<div class="division">
+			<h3>Default Inputs</h3>
+			
+			<form class="pure-form">
+			    <input type="text" >
+			</form>
+		</div>
+		
+		<div class="division">
+			<h3>Required Inputs</h3>
+			
+			<form class="pure-form">
+			    <input type="email" placeholder="Requires an email" required="required">
+			</form>
+		</div>
+		
+		<div class="division">
+			<h3>Disabled Inputs</h3>
+			
+			<form class="pure-form">
+			    <input type="text" placeholder="Disabled input here..." disabled="disabled">
+			</form>
+		</div>
+		
+		<div class="division">
+			<h3>Read-Only Inputs</h3>
+			
+			<form class="pure-form">
+			    <input type="text" value="Readonly input here..." readonly="readonly">
+			</form>
+		</div>
+		
+		<div class="division">
+			<h3>Rounded Inputs</h3>
+			
+			<form class="pure-form">
+			    <input type="text" class="pure-input-rounded">
+			</form>
+		</div>
+		
+		<div class="division">
+			<h3>Checkboxes and Radios</h3>
+			
+			<form class="pure-form">
+			    <label for="option-one" class="pure-checkbox">
+			        <input id="option-one" type="checkbox" value="">
+			        Here's option one.
+			    </label>
+			
+			    <label for="option-two" class="pure-radio">
+			        <input id="option-two" type="radio" name="optionsRadios" value="option1" checked>
+			        Here's a radio button. You can choose this one..
+			    </label>
+			
+			    <label for="option-three" class="pure-radio">
+			        <input id="option-three" type="radio" name="optionsRadios" value="option2">
+			        ..Or this one!
+			    </label>
+			</form>
+		</div>
+
+		<div class="division">
+			<h3>Textarea</h3>
+
+			<form class="pure-form">
+				<textarea cols="30" rows="5">Here's text</textarea>
+			</form>
+		</div>
+	</body>
+</html>

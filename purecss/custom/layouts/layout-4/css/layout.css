@@ -1,0 +1,26 @@
+#wrap { background: #FAFAFA; }
+#main { }
+#footer { background: #848484; }
+#header { height: 50px; background: #A4A4A4; }
+#content { }
+#aside { height: auto; background: #D8D8D8; }
+#main-section { padding: 30px 15px; }
+
+@media (min-width: 48em) {
+	#content { padding-left: 300px; }
+	#aside {
+		position:fixed; 
+		top:0; 
+		bottom:0; 
+		margin-top:50px;
+		margin-left:-300px;
+		width:300px;
+	}
+	#main-section { }
+}
+
+@media (max-width: 48em) {
+	#content { }
+	#aside { height: auto; }
+	#main-section {}
+}

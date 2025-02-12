@@ -1,0 +1,123 @@
+/* ---- pureness-member-title ---- */
+.pureness-member-title {
+    margin-bottom: 20px;
+    color: #A4A4A4;
+}
+.pureness-member-title h2{
+    font-size: 24px;
+}
+
+/* ---- pureness-member-buttons ---- */
+.pureness-member-buttons {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* ---- board-list ---- */
+.pureness-member-list {
+    width: 100%;
+    border: 0px;
+}
+.pureness-member-list th, .pureness-member-list td {
+    border: 0px;
+}
+.pureness-member-list th {
+    text-align: center;
+}
+.pureness-member-list td {
+    border-bottom: 1px solid #CBCBCB;
+    font-weight: lighter;
+    text-align: center;
+}
+.pureness-member-list a {
+    text-decoration: none;
+    color: #000000;
+}
+.pureness-member-list a:hover {
+    text-decoration: underline;
+}
+.pureness-member-list .title {
+    text-align: left;
+}
+
+/* ---- pureness-member-search ---- */
+.pureness-member-search {
+    width: 100%;
+    margin: 40px 0;
+    padding: 15px 0;
+    border: 1px solid #cbcbcb;
+}
+.pureness-member-search select, .pureness-member-search input, .pureness-member-search button {
+    height: 37px;
+}
+.pureness-member-search select {
+    float: right;
+    width: 90%;
+    margin-right: 5px;
+
+}
+.pureness-member-search input {
+    width: 100%;
+}
+.pureness-member-search button {
+    float: left;
+    width: 80%;
+    margin-left: 5px;
+}
+
+.pureness-member-search .pure-form button[type=submit] {
+    margin: 0 !important;
+}
+
+/* ---- pureness-member-form ---- */
+.pureness-member-form {
+    width: 100%;
+    border: 0px;
+}
+.pureness-member-form .pure-g {
+    margin-bottom: 15px;
+}
+.pureness-member-form .title {
+    display: block;
+    font-weight: bold;
+    line-height: 24px;
+}
+.pureness-member-form .content {
+    display: block;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 9px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #2E2E2E;
+}
+.pureness-member-form .error {
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FF0000;
+}
+.pureness-member-form input[type=checkbox] {
+    margin-left: 10px;
+}
+
+/* ---- pureness-member-detail ---- */
+.pureness-member-detail {
+    width: 100%;
+}
+.pureness-member-detail .pure-g {
+    margin-bottom: 10px;
+}
+.pureness-member-detail .title {
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+}
+.pureness-member-detail .content {
+    display: block;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 9px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #2E2E2E;
+}
+
