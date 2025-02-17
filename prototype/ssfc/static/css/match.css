@@ -1,0 +1,130 @@
+/*---- .match-list ----*/
+.match-list {
+	width: inherit;
+}
+.match-list>.add {
+	margin: 5px 5px 15px;
+	padding: 40px 0;
+	width: inherit;
+	height: auto;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+.match-list>.add>i {
+	font-size: 30px;
+}
+.match-list>.item {
+	margin: 5px 5px 15px;
+	width: inherit;
+	height: auto;
+	text-align: center;
+	border: 1px solid #CBCBCB;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #CACACA;
+	-moz-box-shadow: 2px 2px 2px #CACACA;
+	-webkit-box-shadow: 2px 2px 2px #CACACA;
+}
+.match-list>.item>.name {
+	margin-top: 15px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.match-list>.item>.score {
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.match-list>.item>.place {
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+/*---- .match-form ----*/
+.match-form {
+	width: inherit;
+}
+.match-form>form {
+	width: inherit;
+	height: auto;
+}
+.match-form>form>.pure-g {
+	margin-bottom: 15px;
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+}
+.match-form>form>.pure-g>.title{
+	text-align: center;
+}
+.match-form>form>.pure-g>.content>input[type=text]{
+	width: 100%;
+}
+.match-form>.buttons {
+	margin-top: 30px;
+	text-align: center;
+}
+.match-form>.buttons>button {
+	width: 100px;
+}
+
+/*---- .match-detail ----*/
+.match-detail {
+	width: inherit;
+}
+.match-detail>form {
+	margin-bottom: 15px;
+	width: inherit;
+	line-height: 50px;
+}
+.match-detail>form>.pure-g>.title{
+	text-align: center;
+}
+.match-detail>form>.pure-g>.content{
+	padding-left: 20px;
+}
+.match-detail>form>.pure-g>.content>input[type=text]{
+	width: 100%;
+}
+.match-detail>.buttons {
+	margin-top: 30px;
+	text-align: center;
+}
+.match-detail>.buttons>button {
+	width: 100px;
+}
+
+/*---- .match-player-list ----*/
+.match-player-list {
+	width: inherit;
+	height: auto;
+}
+.match-player-list>table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.match-player-list>table>thead {
+	height: 30px;
+}
+.match-player-list>table>thead>tr>th {
+	height: 50px;
+}
+.match-player-list>table>tbody>tr>td {
+	height: 40px;
+	text-align: center;
+}
+.match-player-list>table>tbody>tr>td>input[type=text] {
+	width: 100%;
+}
+.match-player-list>.buttons {
+	margin-top: 30px;
+	text-align: center;
+}
+.match-player-list>.buttons>button {
+	width: 100px;
+}
+

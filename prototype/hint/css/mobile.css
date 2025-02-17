@@ -1,0 +1,266 @@
+/*---- .mobile-nav start ----*/
+.mobile-nav {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin-top: 30px;
+}
+.mobile-nav-title {
+	width: 900px;
+	margin: 0 auto;
+}
+.mobile-nav-title>span {
+	font-weight: bold;
+	font-size: 16px;
+}
+/*---- .mobile-nav end ----*/
+
+
+/*---- .mobile-search start ----*/
+.mobile-search {
+	width: 100%;
+	min-width: 1000px;
+	height: 100px;
+}
+.mobile-search fieldset {
+	width: 700px;
+	border: 0;
+	margin: 0 auto;
+}
+.mobile-search legend {
+	display: none;
+}
+.mobile-search p {
+	padding-top: 10px;
+}
+.mobile-search-condition {
+	width: 150px;
+	height: 40px;
+	margin-right: 2px;
+	border: 1px solid #DCDCDC;
+}
+.mobile-search-word {
+	width: 440px;
+	height: 38px;
+	margin-right: 2px;
+	padding: 5px;
+	border: 1px solid #DCDCDC;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.mobile-search-btn {
+	width: 90px;
+	height: 40px;
+	background: red;
+	margin-top: -4px;
+	margin-right: 2px;
+	border: 1px solid #DCDCDC;
+	background: #CACACA;
+}
+/*---- .mobile-search end ----*/
+
+
+/*---- .mobile-list start ----*/
+.mobile-list {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin: 20px 0;
+}
+.mobile-list table {
+	width: 900px;
+	margin: 0 auto;
+}
+.mobile-list caption {
+	display: none;
+}
+.mobile-list thead {
+	background: #D8D8D8;
+}
+.mobile-list thead>tr {
+	height: 40px;
+	border-bottom: 1px solid #C6C6C6;
+}
+.mobile-list thead>tr>th {
+	text-align: center;
+}
+.mobile-list tbody { }
+.mobile-list tbody>tr {
+	height: 35px;
+	border-bottom: 0.5px solid #C6C6C6;
+}
+.mobile-list tbody>tr>td {
+	text-align: center;
+}
+/*---- .mobile-list end ----*/
+
+
+/*---- .mobile-write start ----*/
+.mobile-write {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin: 20px 0;
+}
+.mobile-write table {
+	width: 900px;
+	margin: 0 auto;
+}
+.mobile-write caption {
+	display: none;
+}
+.mobile-write thead { }
+.mobile-write thead>tr {
+	height: 40px;
+}
+.mobile-write thead>tr>th {
+	text-align: left;
+}
+.mobile-write tbody { }
+.mobile-write tbody>tr {
+	height: 100%;
+}
+.mobile-write tbody>tr>td {
+	text-align: left;
+}
+.mobile-write-title {
+	width: 890px;
+	height: 38px;
+	margin: 3px;
+	border: 1px solid #C6C6C6;
+	font-weight: normal;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.mobile-write-content {
+	width: 890px;
+	height: 500px;
+	margin: 3px;
+	border: 1px solid #C6C6C6;
+	padding: 10px;
+	line-height: 25px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*---- .mobile-write end ----*/
+
+
+/*---- .mobile-view start ----*/
+.mobile-view {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin: 20px 0;
+}
+.mobile-view table {
+	width: 900px;
+	margin: 0 auto;
+}
+.mobile-view caption {
+	display: none;
+}
+.mobile-view thead { }
+.mobile-view thead>tr {
+	height: 45px;
+}
+.mobile-view thead>tr>th {
+	text-align: center;
+}
+.mobile-view tbody { }
+.mobile-view tbody>tr {
+	height: 100%;
+}
+.mobile-view tbody>tr>td {
+	text-align: left;
+	vertical-align: top;
+}
+.mobile-view-title {
+	width: 890px;
+	height: inherit;
+	border-top: 1px solid #C6C6C6;
+	border-bottom: 1px solid #C6C6C6;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.mobile-view-content {
+	width: 890px;
+	height: 500px;
+	margin: 3px;
+	padding: 10px;
+	border: 1px solid #C6C6C6;
+	font-weight: normal;
+	line-height: 25px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*---- .mobile-view end ----*/
+
+
+/*---- .mobile-btn start ----*/
+.mobile-btn {
+	width: 100%;
+	min-width: 1000px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.mobile-btn-list {
+	width: 900px;
+	height: inherit;
+	margin: 0 auto;
+}
+.mobile-btn-group {
+	float: right;
+	width: auto;
+	height: inherit;
+}
+.mobile-btn-group a {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;;
+	text-decoration: none;
+	color: #000;
+	margin: 0 10px;
+}
+.mobile-btn-group a:active {
+	color: #000;
+}
+/*---- .mobile-btn end ----*/
+
+
+/*---- .mobile-pagination start ----*/
+.mobile-pagination {
+	text-align: center; 
+	margin: 20px;
+}
+.mobile-pagination a, .mobile-pagination strong {
+    display: inline-block;
+	background: #FFF;
+    margin-right: 3px;
+    padding: 4px 13px;
+	font-size: 16px;
+	line-height: 20px;;
+	text-decoration: none;
+	color: #4A4A4A;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.mobile-pagination a:hover { 
+	color: #FFBB00;
+}
+.mobile-pagination a:active {
+	background: #D5D5D5;
+}
+.mobile-pagination strong {
+	color: #000;
+}
+/*---- .mobile-pagination end ----*/

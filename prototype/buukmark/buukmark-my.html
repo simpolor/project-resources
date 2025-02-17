@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>purecss.io</title>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+	    <!--[if lte IE 8]>
+	        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+	    <![endif]-->
+	    <!--[if gt IE 8]><!-->
+	        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	    <!--<![endif]-->
+		<link rel="stylesheet" href="css/stickyfooter.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/buukmark.css">
+		
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<!-- jQuery Modal -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+		<script type="text/javascript">
+			function ex1(){
+				$('.bookmark-add-category').val('test');
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
+
+				<div id="header">
+					<div class="header-logo">
+						<span>BUUKMARK</span>
+					</div>
+					<div class="header-member">
+						<span>회원가입</span>
+						<span>로그인</span>
+					</div>
+				</div><!-- #header -->
+
+				<div id="nav">
+					<div class="nav-menus">
+						<span>전체 즐겨찾기</span>
+						<span>나의 즐겨찾기</span>
+						<span>자유게시판</span>
+						<span>공지사항</span>
+						<span>문의사항</span>
+					</div>
+				</div><!-- #nav -->
+
+				<div id="section">
+					<div class="bookmark-mySearch">
+						<form action="">
+							<fieldset>
+								<legend>북마크 검색</legend>
+								<p>
+									<select class="bookmark-mySearch-condition">
+										<option>검색조건</option>
+									</select>
+									<input type="text" class="bookmark-mySearch-word" placeholder="설명" />
+									<button class="pure-button bookmark-mySearch-btn">검색</button>
+									<a href="#bookmark-add" rel="modal:open" class="pure-button bookmark-myAdd-btn" onclick="ex1();">+</a>
+								</p>
+							</fieldset>
+						</form>
+					</div>
+					
+					<div id="bookmark-add" class="bookmark-add" style="display: none;">
+						<form action="">
+							<fieldset>
+								<legend>북마크 검색</legend>
+								<p>
+									<select class="bookmark-add-type">
+										<option>유형선택</option>
+									</select>
+									<input type="text" class="bookmark-add-category" placeholder="카테고리" />
+									<input type="text" class="bookmark-add-description" placeholder="설명" />
+									<button class="pure-button bookmark-add-btn">등록</button>
+								</p>
+								<p>
+									<input type="text" class="bookmark-add-url" placeholder="URL" />
+								</p>
+							</fieldset>
+						</form>
+					</div>
+					
+					<div class="bookmark-list">
+						<table>
+							<caption>북마크 목록</caption>
+							<colgroup>
+								<col width="20%" />
+								<col width="80%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>제목</th>
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								<tr>
+									<td>제목</td>
+									<td>내용</td>
+								</tr>
+								
+							</tbody>
+						</table>					
+					</div>
+				</div><!-- #section -->
+
+			</div><!-- #main -->
+		</div><!-- #wrap -->
+
+		<div id="footer">
+			<div class="footer-copyright">
+				<span>Copyright Simpolor</span>
+			</div>
+		</div><!-- #footer .pure-g -->
+
+	</body>
+</html>

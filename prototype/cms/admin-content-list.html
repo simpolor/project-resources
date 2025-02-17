@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+	<title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
+	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/layouts/admin-layout.css">
+	<link rel="stylesheet" href="css/layouts/admin-section.css">
+	<link rel="stylesheet" href="css/layouts/admin-board.css">
+	<link rel="stylesheet" href="../../purecss-extension/css/purecss-common.css">
+</head>
+<body>
+
+	<div id="layout">
+		<div id="menu">
+			<div class="pure-menu">
+				<a class="pure-menu-heading" href="#">PURE ADMIN</a>
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item">
+						<a href="admin-menu.html" class="pure-menu-link">메뉴</a>
+					</li>
+					<li class="pure-menu-item menu-item-divided pure-menu-selected">
+						<a href="./admin-content-list.html" class="pure-menu-link">콘텐츠</a>
+					</li>
+					<li class="pure-menu-item">
+						<a href="admin-board-list.html" class="pure-menu-link">게시판</a>
+					</li>
+					<li class="pure-menu-item">
+						<a href="admin-member-list.html" class="pure-menu-link">회원</a>
+					</li>
+					<li class="pure-menu-item">
+						<a href="#" class="pure-menu-link">통계</a>
+					</li>
+					<li class="pure-menu-item">
+						<a href="admin-site.html" class="pure-menu-link">사이트</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main">
+			<div class="header">
+				<div class="gnb">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<a href="#">user</a>
+				</div>
+			</div>
+			
+			<div class="content">
+				<h2>
+					콘텐츠
+					<small>콘텐츠를 관리하는 페이지</small>
+				</h2>
+				
+				<div class="section">
+					<h3></h3>
+					
+					<p>
+						html로 작성된 페이지를 사용자에게 그대로 보여주도록 합니다.
+					</p>
+					
+					<form class="pure-form pure-g pure-search">
+						<div class="pure-u-1-4">
+					        <select id="state">
+			                    <option>검색조건</option>
+			                </select>
+					    </div>
+					    <div class="pure-u-5-8">
+					        <input type="text" placeholder="검색내용">
+					    </div>
+					    <div class="pure-u-1-8">
+					        <button type="submit" class="pure-button pure-button-primary">검색</button>
+					    </div>
+					</form>
+					
+					<table class="pure-table pure-table-horizontal pure-board-list">
+						<colgroup>
+							<col width="5%" />
+							<col width="50%" />
+							<col width="13%" />
+							<col width="17%" />
+							<col width="15%" />
+						</colgroup>
+						
+						<thead>
+							<tr>
+								<th></th>
+								<th>콘텐츠명</th>
+								<th>생성자</th>
+								<th>생성일</th>
+								<th></th>
+							</tr>
+						</thead>
+			
+						<tbody>
+							<tr>
+								<td class="pure-txt-center">1</td>
+								<td>회사연혁</td>
+								<td class="pure-txt-center">관리자</td>
+								<td class="pure-txt-center">2018-03-24</td>
+								<td class="pure-txt-center">
+									<a href="admin-content-write.html" class="edit">수정</a>
+									 / 
+									<a href="#" class="delete">삭제</a>
+								</td>
+							</tr>
+			
+							<tr>
+								<td class="pure-txt-center">2</td>
+								<td>인증서</td>
+								<td class="pure-txt-center">관리자</td>
+								<td class="pure-txt-center">2018-03-24</td>
+								<td class="pure-txt-center">
+									<a href="admin-content-write.html" class="edit">수정</a>
+									 / 
+									<a href="#" class="delete">삭제</a>
+								</td>
+							</tr>
+			
+							<tr>
+								<td class="pure-txt-center">3</td>
+								<td>오시는길</td>
+								<td class="pure-txt-center">관리자</td>
+								<td class="pure-txt-center">2018-03-24</td>
+								<td class="pure-txt-center">
+									<a href="admin-content-write.html" class="edit">수정</a>
+									 / 
+									<a href="#" class="delete">삭제</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<div class="pure-pagination">
+						<a href="#"><i class="fa fa-chevron-left"></i></a>
+						<a href="#"><i class="fa fa-angle-left"></i></a>
+	
+						<a href="#">1</a>
+						<strong>2</strong>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+	
+						<a href="#"><i class="fa fa-angle-right"></i></a>
+						<a href="#"><i class="fa fa-chevron-right"></i></a>
+					</div>
+					
+					<div class="pure-btn-group">
+						<a href="admin-content-write.html" class="pure-button">등록</a>
+					</div>
+				</div><!-- .section -->
+				
+			</div><!-- .content -->
+			
+		</div><!-- .main -->
+	</div>
+
+</body>
+</html>

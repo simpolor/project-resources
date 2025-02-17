@@ -1,0 +1,86 @@
+/*---- .match-player-list ----*/
+.member-list {
+	width: inherit;
+	height: auto;
+}
+.member-list>table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.member-list>table>thead {
+	height: 30px;
+}
+.member-list>table>thead>tr>th {
+	height: 50px;
+}
+.member-list>table>tbody>tr>td {
+	height: 40px;
+	text-align: center;
+}
+.member-list>.buttons {
+	margin-top: 30px;
+	text-align: right;
+}
+.member-list>.buttons>button {
+	width: 100px;
+}
+
+/*---- .member-detail ----*/
+.member-detail {
+	width: inherit;
+}
+.member-detail>form {
+	width: inherit;
+	height: auto;
+}
+.member-detail>form>.pure-g {
+	margin-bottom: 15px;
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+}
+.member-detail>form>.pure-g>.title{
+	text-align: center;
+}
+.member-detail>form>.pure-g>.content{
+	padding-left: 20px;
+}
+.member-detail>.buttons {
+	margin-top: 30px;
+	text-align: center;
+}
+.member-detail>.buttons>button {
+	width: 100px;
+}
+
+/*---- .member-form ----*/
+.member-form {
+	width: inherit;
+}
+.member-form>form {
+	width: inherit;
+	height: auto;
+}
+.member-form>form>.pure-g {
+	margin-bottom: 15px;
+	width: inherit;
+	line-height: 50px;
+}
+.member-form>form>.pure-g>.title{
+	text-align: center;
+}
+.member-form>form>.pure-g>.content>input[type=text]{
+	width: 100%;
+}
+.member-form>form>.pure-g>.content>textarea{
+	width: 100%;
+	height: 100px;
+}
+.member-form>.buttons {
+	margin-top: 30px;
+	text-align: center;
+}
+.member-form>.buttons>button {
+	width: 100px;
+}
+

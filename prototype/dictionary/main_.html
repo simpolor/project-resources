@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>purecss.io</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pureness.css">
+    <link rel="stylesheet" href="css/dictionary.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+            <div id="header">
+                <div class="pure-g" style="text-align: center; line-height: 50px;">
+                    <div class="pure-u-1">
+                        <b>Dictionary</b>
+                    </div>
+                </div>
+            </div><!-- #header -->
+
+            <div id="nav" class="topnav">
+                <a href="#news" class="active">All</a>
+                <a href="#contact">English</a>
+                <a href="#about">Korean</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div><!-- #nav -->
+
+            <div id="section">
+                <div id="content">
+
+                    <div class="dictionary-main-buttons">
+                        <a href="#" class="pure-button pure-button-primary">목록</a>
+                        <a href="#" class="pure-button pure-button-primary">등록</a>
+                    </div><!-- .pure-board-buttons -->
+
+                </div><!-- #content -->
+            </div><!-- #section -->
+
+        </div><!-- #main -->
+    </div><!-- #wrap -->
+
+    <div id="footer">
+        <div class="pure-g" style="text-align: center; line-height: 50px;">
+            <div class="pure-u-1">
+                <span>&copy; 2019 Simpolor All rights reserved.</span>
+            </div>
+        </div>
+    </div><!-- #footer -->
+
+</body>
+
+</html>

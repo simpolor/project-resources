@@ -1,0 +1,128 @@
+/* ---- pure-list ---- */
+.dictionary-main-buttons {
+    width: 100%;
+}
+
+.dictionary-main-buttons a {
+    display: block;
+    width: 50%;
+    line-height: 50px;
+    margin: 40px auto;
+}
+
+/* ---- dictionary-list ---- */
+.dictionary-list {
+    margin: 50px 0;
+    width: 100%;
+    border: 0px;
+}
+.dictionary-list tbody {
+    border-top: 1px solid #CBCBCB;
+}
+.dictionary-list th, .dictionary-list td {
+    border: 0px;
+}
+.dictionary-list th {
+    text-align: center;
+}
+.dictionary-list td {
+    font-weight: lighter;
+    border-bottom: 1px solid #CBCBCB;
+}
+.dictionary-list a {
+    text-decoration: none;
+}
+
+/* ---- dictionary-form ---- */
+.dictionary-form {
+    width: 100%;
+    margin: 30px 0;
+}
+.dictionary-form div {
+    margin: 20px 10px;
+    text-align: center;
+}
+.dictionary-form input[type=radio] {
+    margin: 10px 0;
+    width: 30px;
+}
+.dictionary-form input[type=text] {
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+}
+.dictionary-form textarea {
+    margin: 10px 0;
+    width: 100%;
+    height: 100px;
+}
+
+/* ---- dictionary-view ---- */
+.dictionary-view {
+    width: 100%;
+    margin: 30px 0;
+}
+.dictionary-view div {
+    padding: 10px;
+    border-bottom: 1px solid #CBCBCB;
+}
+.dictionary-view span {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+.dictionary-view p {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    min-height: 50px;
+}
+
+/* ---- pure-pagination ---- */
+.pure-pagination {
+    margin: 30px 0;
+}
+
+.pure-pagination ul {
+    list-style: none;
+    text-align: center;
+}
+
+.pure-pagination li {
+    display: inline;
+    padding: 0 5px;
+}
+
+.pure-pagination a {
+    display: inline-block;
+    margin-right: 3px;
+    padding: 4px 13px;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 20px;;
+    text-decoration: none;
+    color: #CBCBCB;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.pure-pagination a:hover {
+    color: #CBCBCB;
+}
+
+.pure-pagination .active>a {
+    font-weight: bold;
+    color: #000000;
+}
+
+/* ---- dictionary-buttons ---- */
+.pure-buttons {
+    text-align: right;
+    margin: 30px 10px;
+}
+.pure-button {
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+}

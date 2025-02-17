@@ -1,0 +1,142 @@
+.pure-board-list {
+	width: 100%;
+}
+
+.pure-board-list th {
+	text-align: center;
+}
+
+.pure-board-list td {
+	font-weight: lighter;
+}
+
+.pure-board-list a {
+	text-decoration: none;
+}
+
+.pure-board-list .edit {
+	color: #1f8dd6;
+}
+
+.pure-board-list .delete {
+	color: #dd514c;
+}
+
+
+.pure-board-write {
+	width: 100%;
+}
+
+.pure-board-write .pure-g {
+	margin-bottom: 10px;
+}
+
+.pure-board-write input[type=text], .pure-board-write button {
+	height: 40px;
+}
+
+.pure-board-write button {
+	margin-left: 10px;
+}
+
+.pure-board-write textarea {
+	width: 100%;
+	height: 350px;
+	resize: none;
+}
+
+.pure-board-write b, .pure-board-write span, .pure-board-write small, .pure-board-write label {
+	line-height: 40px;
+	font-weight: normal;
+}
+.pure-board-write b {
+	font-size: 16px;	
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+.pure-board-write small {
+	font-size: 12px;	
+	padding-left: 10px;
+	color: #ff0000;
+}
+
+.pure-board-write label {
+	font-size: 16px;	
+}
+
+.pure-board-view {
+	width: 100%;
+}
+
+.pure-board-view b, .pure-board-view span {
+	font-size: 16px;	
+	line-height: 40px;
+}
+
+.pure-board-view b {
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+.pure-board-view span {
+	font-weight: normal;
+}
+
+.pure-search {
+	margin: 20px 0;
+	width: 100%;
+	height: 70px;
+	border: 1px solid #cbcbcb;
+}
+
+.pure-search select, .pure-search input, .pure-search button {
+	margin: 15px 5px 15px 10px;
+	height: 40px;
+}
+
+.pure-search select {
+	width: 190px;
+}
+
+.pure-search input {
+	width: 490px;
+}
+
+.pure-search button {
+	width: 80px;
+}
+
+
+/* ---- pagination ---- */
+.pure-pagination {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.pure-pagination a, .pure-pagination strong {
+	display: inline-block;
+	background: #FFF;
+	margin-right: 3px;
+	padding: 4px 13px;
+	font-size: 16px;
+	line-height: 20px;;
+	text-decoration: none;
+	color: #4A4A4A;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.pure-pagination a:hover {
+	background-color: #BEBEBE;
+	color: #FFF;
+}
+
+.pure-pagination a:active {
+	background: #D5D5D5;
+}
+
+.pure-pagination strong {
+	color: #1f8dd6;
+}

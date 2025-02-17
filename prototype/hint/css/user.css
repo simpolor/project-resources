@@ -1,0 +1,314 @@
+/*---- .user-nav start ----*/
+.user-nav {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin-top: 30px;
+}
+.user-nav-title {
+	width: 900px;
+	margin: 0 auto;
+}
+.user-nav-title>span {
+	font-weight: bold;
+	font-size: 16px;
+}
+/*---- .user-nav end ----*/
+
+
+/*---- .user-search start ----*/
+.user-search {
+	width: 100%;
+	min-width: 1000px;
+	height: 100px;
+}
+.user-search fieldset {
+	width: 700px;
+	border: 0;
+	margin: 0 auto;
+}
+.user-search legend {
+	display: none;
+}
+.user-search p {
+	padding-top: 10px;
+}
+.user-search-condition {
+	width: 150px;
+	height: 40px;
+	margin-right: 2px;
+	border: 1px solid #DCDCDC;
+}
+.user-search-word {
+	width: 440px;
+	height: 38px;
+	margin-right: 2px;
+	padding: 5px;
+	border: 1px solid #DCDCDC;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.user-search-btn {
+	width: 90px;
+	height: 40px;
+	background: red;
+	margin-top: -4px;
+	margin-right: 2px;
+	border: 1px solid #DCDCDC;
+	background: #CACACA;
+}
+/*---- .user-search end ----*/
+
+
+/*---- .user-list start ----*/
+.user-list {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin: 20px 0;
+}
+.user-list table {
+	width: 900px;
+	margin: 0 auto;
+}
+.user-list caption {
+	display: none;
+}
+.user-list thead {
+	background: #D8D8D8;
+}
+.user-list thead>tr {
+	height: 40px;
+	border-bottom: 1px solid #C6C6C6;
+}
+.user-list thead>tr>th {
+	text-align: center;
+}
+.user-list tbody { }
+.user-list tbody>tr {
+	height: 35px;
+	border-bottom: 0.5px solid #C6C6C6;
+}
+.user-list tbody>tr>td {
+	text-align: center;
+}
+/*---- .user-list end ----*/
+
+
+/*---- .user-write start ----*/
+.user-write {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin: 20px 0;
+}
+.user-write table {
+	width: 900px;
+	margin: 0 auto;
+}
+.user-write caption {
+	display: none;
+}
+.user-write thead { }
+.user-write thead>tr {
+	height: 40px;
+}
+.user-write thead>tr>th {
+	text-align: left;
+}
+.user-write tbody { }
+.user-write tbody>tr {
+	height: 100%;
+}
+.user-write tbody>tr>td {
+	text-align: left;
+}
+.user-write-title {
+	width: 890px;
+	height: 38px;
+	margin: 3px;
+	border: 1px solid #C6C6C6;
+	font-weight: normal;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.user-write-content {
+	width: 890px;
+	height: 500px;
+	margin: 3px;
+	border: 1px solid #C6C6C6;
+	padding: 10px;
+	line-height: 25px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*---- .user-write end ----*/
+
+
+/*---- .user-view start ----*/
+.user-view {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin: 20px 0;
+}
+.user-view table {
+	width: 900px;
+	margin: 0 auto;
+}
+.user-view caption {
+	display: none;
+}
+.user-view thead { }
+.user-view thead>tr {
+	height: 45px;
+}
+.user-view thead>tr>th {
+	text-align: center;
+}
+.user-view tbody { }
+.user-view tbody>tr {
+	height: 100%;
+}
+.user-view tbody>tr>td {
+	text-align: left;
+	vertical-align: top;
+}
+.user-view-title {
+	width: 890px;
+	height: inherit;
+	border-top: 1px solid #C6C6C6;
+	border-bottom: 1px solid #C6C6C6;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.user-view-content {
+	width: 890px;
+	height: 500px;
+	margin: 3px;
+	padding: 10px;
+	border: 1px solid #C6C6C6;
+	font-weight: normal;
+	line-height: 25px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*---- .user-view end ----*/
+
+
+/*---- .reply-write start ----*/
+.reply-write {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.reply-write table {
+	width: 900px;
+	margin: 0 auto;
+	background: #EAEAEA;
+}
+.reply-write caption {
+	display: none;
+}
+.reply-write thead { 
+	text-align: left;
+}
+.reply-write thead>tr {
+	height: 40px;
+}
+.reply-write thead>tr>th {
+	text-align: left;
+}
+.reply-write tbody { }
+.reply-write tbody>tr {
+	height: 40px;
+	border: 1px solid #C6C6C6;
+}
+.reply-write tbody>tr>td {
+	text-align: left;
+	line-height: 35px;
+}
+.reply-write-content {
+	width: 650px;
+	height: 80px;
+	margin-top: 10px;
+	padding: 5px;
+	line-height: 30px;
+	border: 1px solid #C6C6C6;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*---- .user-write end ----*/
+
+
+/*---- .user-btn start ----*/
+.user-btn {
+	width: 100%;
+	min-width: 1000px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.user-btn-list {
+	width: 900px;
+	height: inherit;
+	margin: 0 auto;
+}
+.user-btn-group {
+	float: right;
+	width: auto;
+	height: inherit;
+}
+.user-btn-group a {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;;
+	text-decoration: none;
+	color: #000;
+	margin: 0 10px;
+}
+.user-btn-group a:active {
+	color: #000;
+}
+/*---- .user-btn end ----*/
+
+
+/*---- .user-pagination start ----*/
+.user-pagination {
+	text-align: center; 
+	margin: 20px;
+}
+.user-pagination a, .user-pagination strong {
+    display: inline-block;
+	background: #FFF;
+    margin-right: 3px;
+    padding: 4px 13px;
+	font-size: 16px;
+	line-height: 20px;;
+	text-decoration: none;
+	color: #4A4A4A;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.user-pagination a:hover { 
+	color: #FFBB00;
+}
+.user-pagination a:active {
+	background: #D5D5D5;
+}
+.user-pagination strong {
+	color: #000;
+}
+/*---- .user-pagination end ----*/

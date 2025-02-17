@@ -1,0 +1,109 @@
+/*---- .enquire-nav start ----*/
+.enquire-nav {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin-top: 30px;
+}
+.enquire-nav-title {
+	width: 900px;
+	margin: 0 auto;
+}
+.enquire-nav-title>span {
+	font-weight: bold;
+	font-size: 16px;
+}
+.enquire-nav-desc {
+	width: 900px;
+	margin: 0 auto;
+}
+.enquire-nav-desc>span {
+	font-size: 14px;
+	color: red;
+}
+/*---- .enquire-nav end ----*/
+
+
+/*---- .enquire-write start ----*/
+.enquire-write {
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	margin: 20px 0;
+}
+.enquire-write table {
+	width: 900px;
+	margin: 0 auto;
+}
+.enquire-write caption {
+	display: none;
+}
+.enquire-write thead { }
+.enquire-write thead>tr {
+	height: 40px;
+}
+.enquire-write thead>tr>th {
+	text-align: left;
+}
+.enquire-write tbody { }
+.enquire-write tbody>tr {
+	height: 100%;
+}
+.enquire-write tbody>tr>td {
+	text-align: left;
+}
+.enquire-write-title {
+	width: 890px;
+	height: 38px;
+	margin: 3px;
+	border: 1px solid #C6C6C6;
+	font-weight: normal;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.enquire-write-content {
+	width: 890px;
+	height: 500px;
+	margin: 3px;
+	border: 1px solid #C6C6C6;
+	padding: 10px;
+	line-height: 25px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*---- .enquire-write end ----*/
+
+
+/*---- .enquire-btn start ----*/
+.enquire-btn {
+	width: 100%;
+	min-width: 1000px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.enquire-btn-list {
+	width: 900px;
+	height: inherit;
+	margin: 0 auto;
+}
+.enquire-btn-group {
+	float: right;
+	width: auto;
+	height: inherit;
+}
+.enquire-btn-group a {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;;
+	text-decoration: none;
+	color: #000;
+	margin: 0 10px;
+}
+.enquire-btn-group a:active {
+	color: #000;
+}
+/*---- .enquire-btn end ----*/
